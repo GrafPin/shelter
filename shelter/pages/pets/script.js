@@ -7,6 +7,7 @@ let elem_five = document.getElementById("body");
 let nav_one = document.getElementsByClassName("navigation__a")[2];
 let nav_two = document.getElementsByClassName("navigation__a")[3];
 let bmw = document.getElementById("burger-menu__wraper");
+let headerLogo = document.getElementsByClassName("header__logo")[1];
 
 function open_burger() {
     elem.classList.add("burger-menu__animation_one");
@@ -14,6 +15,7 @@ function open_burger() {
     elem_three.classList.add("burger-menu__bloсk__animation");
     elem_four.classList.add("burger-menu__animation_two");
     elem_five.classList.add("body__scroll");
+    headerLogo.classList.add("logo__animate");
 }
 function close_burger() {
     elem.classList.remove("burger-menu__animation_one");
@@ -21,6 +23,7 @@ function close_burger() {
     elem_three.classList.remove("burger-menu__bloсk__animation");
     elem_four.classList.remove("burger-menu__animation_two");
     elem_five.classList.remove("body__scroll");
+    headerLogo.classList.remove("logo__animate");
 }
 
 elem.onclick = open_burger;
